@@ -1,0 +1,31 @@
+spring:
+  banner:
+    location: banner/banner.txt
+  application:
+    name: spider-core
+  jpa:
+    show-sql: true
+httpconfig:
+  timeoutForRead: 10000
+  maxReceiveSize: 10
+  userAgent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0
+  timeoutForConnect: 3000
+  maxRedirect: 1
+igenerator:
+  maxExecuteCount: 2
+fetcher:
+  wait_threadEndTime: 2000
+  threadKiller: 1000
+  executeInterval: 0
+defaultparse:
+  autoDetectImg: false
+generator:
+  topNumber: 100000
+queue:
+  MaxSize: 1000
+spider:
+  totalThreads: 10
+server:
+  port: 8080
+redisDb:
+  config: redisKey
